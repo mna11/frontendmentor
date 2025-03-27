@@ -10,6 +10,7 @@
 
 * {
     font-family: 'Outfit', sans-serif;
+    color: hsl(30, 10%, 34%);
 }
 
 body {
@@ -34,23 +35,34 @@ ul li {
 ol {
     margin-left: -20px;
 }
+  
+ol li {
+    padding-left: 20px;
+    margin-bottom: 10px;
+}
 
 .preparation_list::marker {
     color: hsl(332, 51%, 32%);
     font-size: 10px;
 }
 
-.Ingredients_list {
+.ingredients_list {
     list-style-type: square;
 }
 
-.Ingredients_list::marker {
+.ingredients_list::marker {
     color: hsl(14, 45%, 36%);
     font-size: 10px;
 }
 
+.instructions_list::marker {
+    color: hsl(14, 45%, 36%);
+    font-weight: bold;
+}
+
 .title {
     font-family: 'YoungSerif', sans-serif;
+    color: hsl(24, 5%, 18%);
     margin: 20px auto;
     font-size: 40px;
 }
@@ -88,15 +100,28 @@ table {
     border-collapse: collapse;
 }
 
+hr {
+    background-color: hsl(30, 18%, 87%);
+    height: 1px;
+    border: 0;
+}
+
 tr {
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid hsl(30, 18%, 87%);
 }
 
 th {
-    width: 40%;
-}
-
-th, td {
     padding-left: 50px;
     padding: 10px 50px;
+
+    width: 40%;
+    font-weight: normal;
+}
+
+td {
+    padding-left: 50px;
+    padding: 10px 50px;
+
+    font-weight: bold;
+    color:hsl(14, 45%, 36%);
 }
